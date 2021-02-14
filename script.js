@@ -66,6 +66,7 @@ function libraryFormSubmit(e) {
     console.log('YOu have submitted library form');
     let name = document.getElementById('bookName').value;
     let author = document.getElementById('author').value;
+    localStorage.setItem('authors',author);
     let type;
     let fiction = document.getElementById('fiction');
     let programming = document.getElementById('programming');
@@ -111,13 +112,11 @@ function editfunction(pbookname, pauthorname, ptype, pbookid) {
    
 }
 
-//Delete function 
+//Delete function                                                     
 function deletefunction(pbookid) {
     document.getElementById(pbookid).style.display = "none";;
    
 }
-
-
 
 
 // Todos"
